@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+    <style>
+        /* General Section Styling */
+        section {
+            padding: 5rem 9%;
+            color: white;
+        }
+
+        section h2 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+
+        section p {
+            font-size: 1.6rem;
+        }
+
+        /* Content Cards Styling */
+        .content-card {
+            background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .content-card h3 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-card p {
+            font-size: 1.6rem;
+        }
+
+        .content-card ul {
+            list-style-type: disc;
+            margin-left: 2rem;
+        }
+
+        /* Skills Cards Styling */
+        .skills-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .skills-card h4 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .skills-card p {
+            font-size: 1.4rem;
+        }
+
+        /* Projects Section Styling */
+        .projects-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .projects-card h3 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .projects-card p {
+            font-size: 1.6rem;
+        }
+
+        .projects-card a {
+            color: #b74b4b;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .projects-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Typing Text Styling */
+        .typing-text {
+            display: inline;
+            border-right: px solid #fff;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 3.5s steps(40, end) 1s 1 normal both,
+                       blink-caret 500ms steps(40, end) infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 20%; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: rgb(139, 26, 170); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Te'yana</a>
+
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="main.png" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Te'yana</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>I'm passionate about leveraging technology to create innovative solutions and drive meaningful change. With experience in software development, web design, and digital marketing, I thrive on tackling complex challenges and exploring new technologies. My work reflects a commitment to excellence and a drive for continuous learning. Outside of work, I enjoy volunteering and staying active in the tech community. </p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/te-yana-brown-04a97224a/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/0tbrown" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+            <a href="mailto:browninquires@gmail.com" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-card">
+            <h4>Python</h4>
+            <p>Proficient in Python with experience in web development and data analysis.</p>
+        </div>
+        <div class="skills-card">
+            <h4>JavaScript</h4>
+            <p>Experienced with JavaScript frameworks like React and Node.js.</p>
+        </div>
+        <div class="skills-card">
+            <h4>Web Development</h4>
+            <p>Skilled in HTML5, CSS3, and modern web development practices.</p>
+        </div>
+        <div class="skills-card">
+            <h4>Data Analysis</h4>
+            <p>Strong understanding of data analysis and visualization tools.</p>
+        </div>
+        <div class="skills-card">
+            <h4>Problem Solving</h4>
+            <p>Excellent problem-solving and critical thinking skills.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-card">
+            <h3>Amazon Web Studios UI/UX Project</h3>
+            <p>Designed and prototyped an innovative UI/UX project for Amazon Web Studios. <a href="https://www.figma.com/proto/zCxpE2tx54IN09ut4G15oZ/Project-Navigation?node-id=0-1&t=V1f4t7MxZ05XoCrk-1" target="_blank">View on Figma</a></p>
+        </div>
+        <div class="projects-card">
+            <h3>Multimedia Internship with Americans for Financial Reform</h3>
+            <p>Created graphics and marketing materials during my internship. <a href="https://drive.google.com/drive/u/0/folders/1_ApcEIwFHatn2Z5hyJ3fCV5BLOQTrSow" target="_blank">View on Google Drive</a></p>
+        </div>
+        <div class="projects-card">
+            <h3>Web Builds with National Veterinary Associates</h3>
+            <p>Developed and maintained websites for various veterinary clinics. <a href="https://www.massvethospital.com/" target="_blank">Mass Vet Hospital</a>, <a href="https://www.prestonanimalclinic.com/" target="_blank">Preston Animal Clinic</a>, <a href="https://preview.nvacommunity.com/:1108/" target="_blank">NVA Community</a></p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="content-card">
+            <h3>SDE Intern at Amazon Web Services</h3>
+            <p>Seattle, Washington | 2024-Present</p>
+            <ul>
+                <li>Conducted extensive evaluations and rigorous testing of BloomUI and Monarch components, ensuring high-quality performance and reliability.</li>
+                <li>Pioneered the integration of accessibility features such as ARIA labels, semantic HTML, focus management, and WCAG color contrast guidelines, enhancing user accessibility.</li>
+                <li>Mastered AWS services, including SageMaker and Jumpstart, to optimize machine learning workflows.</li>
+                <li>Participated in design reviews, offering insightful feedback to improve product design and functionality.</li>
+                <li>Collaborated with the ML Experience team on the development of an unreleased AWS product, contributing significantly to its success.</li>
+            </ul>
+        </div>
+        <div class="content-card">
+            <h3>Marketing & Web Experience Associate at National Veterinary Associates</h3>
+            <p>El Segundo, California | 2023-2024</p>
+            <ul>
+                <li>Assisted in designing and developing responsive and user-friendly websites for veterinary clinics, ensuring a seamless online experience for clients and patients.</li>
+                <li>Collaborated with the web development team to implement new features and functionalities, incorporating modern technologies such as HTML5, CSS3, and JavaScript frameworks in our marketing platform.</li>
+                <li>Managed website content and performed quality assurance testing to ensure high standards.</li>
+                <li>Utilized content management systems (CMS) like Contentful and Salesforce to maintain and update website content efficiently.</li>
+                <li>Conducted market research and stayed abreast of web development trends to enhance the effectiveness of digital campaigns.</li>
+            </ul>
+        </div>
+        <div class="content-card">
+            <h3>Marketing Intern at Americans For Financial Reform Education Fund</h3>
+            <p>Washington, DC | 2022-2023</p>
+            <ul>
+                <li>Crafted and updated web narratives aligned with brand guidelines to enhance engagement and visibility.</li>
+                <li>Collaborated with the marketing team to troubleshoot technical issues and optimize content for better performance.</li>
+                <li>Applied web analytics for data analysis, improving SEO strategies and enhancing online presence.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you would like to get in touch with me, feel free to reach out via email or connect with me on LinkedIn or GitHub.</p>
+        <a href="mailto:browninquires@gmail.com" class="btn">Email Me</a>
+    </section>
+</body>
+</html>
