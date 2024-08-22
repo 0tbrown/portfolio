@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +7,59 @@
     <link rel="stylesheet" href="style.css">
     <title>Portfolio Website</title>
     <style>
-        /* General Section Styling */
+        /* General Reset and Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+            padding-top: 5rem; /* Space for header */
+            padding-bottom: 4rem; /* Space for footer */
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background: #222;
+            color: #fff;
+            z-index: 1000; /* Ensure header stays above other content */
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        nav {
+            display: flex;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav a.active {
+            border-bottom: 2px solid #b74b4b;
+        }
+
         section {
-            padding: 5rem 9%;
+            padding: 5rem 9%; /* Space below header */
             color: white;
         }
 
@@ -24,8 +73,7 @@
             font-size: 1.6rem;
         }
 
-        /* Content Cards Styling */
-        .content-card {
+        .content-card, .skills-card, .projects-card {
             background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
             border-radius: 1rem;
             padding: 2rem;
@@ -33,27 +81,9 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         }
 
-        .content-card h3 {
+        .content-card h3, .projects-card h3 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
-        }
-
-        .content-card p {
-            font-size: 1.6rem;
-        }
-
-        .content-card ul {
-            list-style-type: disc;
-            margin-left: 2rem;
-        }
-
-        /* Skills Cards Styling */
-        .skills-card {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 1rem;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
 
         .skills-card h4 {
@@ -61,25 +91,7 @@
             margin-bottom: 1rem;
         }
 
-        .skills-card p {
-            font-size: 1.4rem;
-        }
-
-        /* Projects Section Styling */
-        .projects-card {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 1rem;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .projects-card h3 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .projects-card p {
+        .content-card p, .projects-card p, .skills-card p {
             font-size: 1.6rem;
         }
 
@@ -93,10 +105,9 @@
             text-decoration: underline;
         }
 
-        /* Typing Text Styling */
         .typing-text {
             display: inline;
-            border-right: px solid #fff;
+            border-right: 2px solid #fff;
             white-space: nowrap;
             overflow: hidden;
             animation: typing 3.5s steps(40, end) 1s 1 normal both,
@@ -112,12 +123,46 @@
             from, to { border-color: transparent; }
             50% { border-color: rgb(139, 26, 170); }
         }
+
+        footer {
+            background: #222;
+            color: #fff;
+            padding: 2rem 5%;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #b74b4b;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer .social-icons {
+            margin: 1rem 0;
+        }
+
+        footer .social-icons a {
+            color: #fff;
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        footer .social-icons a:hover {
+            color: #b74b4b;
+        }
     </style>
 </head>
 <body>
     <header>
         <a href="#" class="logo">Te'yana</a>
-
         <nav>
             <a href="#" class="active">Home</a>
             <a href="#skills">Skills</a>
@@ -126,6 +171,7 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
+
     <section class="home">
         <div class="home-img">
             <img src="main.png" alt="">
@@ -133,7 +179,7 @@
         <div class="home-content">
             <h1>Hi, It's <span>Te'yana</span></h1>
             <h3 class="typing-text">I'm a <span></span></h3>
-            <p>I'm passionate about leveraging technology to create innovative solutions and drive meaningful change. With experience in software development, web design, and digital marketing, I thrive on tackling complex challenges and exploring new technologies. My work reflects a commitment to excellence and a drive for continuous learning. Outside of work, I enjoy volunteering and staying active in the tech community. </p>
+            <p>I'm passionate about leveraging technology to create innovative solutions and drive meaningful change. With experience in software development, web design, and digital marketing, I thrive on tackling complex challenges and exploring new technologies. My work reflects a commitment to excellence and a drive for continuous learning. Outside of work, I enjoy volunteering and staying active in the tech community.</p>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/te-yana-brown-04a97224a/" target="_blank">
                     <i class="fa-brands fa-linkedin"></i>
@@ -195,31 +241,29 @@
             <h3>SDE Intern at Amazon Web Services</h3>
             <p>Seattle, Washington | 2024-Present</p>
             <ul>
-                <li>Conducted extensive evaluations and rigorous testing of BloomUI and Monarch components, ensuring high-quality performance and reliability.</li>
-                <li>Pioneered the integration of accessibility features such as ARIA labels, semantic HTML, focus management, and WCAG color contrast guidelines, enhancing user accessibility.</li>
-                <li>Mastered AWS services, including SageMaker and Jumpstart, to optimize machine learning workflows.</li>
-                <li>Participated in design reviews, offering insightful feedback to improve product design and functionality.</li>
-                <li>Collaborated with the ML Experience team on the development of an unreleased AWS product, contributing significantly to its success.</li>
+                <li>Conducted evaluations and testing of BloomUI and Monarch components.</li>
+                <li>Integrated accessibility features such as ARIA labels and WCAG color contrast guidelines.</li>
+                <li>Mastered AWS services including SageMaker and Jumpstart.</li>
+                <li>Collaborated with the engineering team on the development of an unreleased AWS product, contributing to its design and implementation.</li>
             </ul>
         </div>
         <div class="content-card">
             <h3>Marketing & Web Experience Associate at National Veterinary Associates</h3>
             <p>El Segundo, California | 2023-2024</p>
             <ul>
-                <li>Assisted in designing and developing responsive and user-friendly websites for veterinary clinics, ensuring a seamless online experience for clients and patients.</li>
-                <li>Collaborated with the web development team to implement new features and functionalities, incorporating modern technologies such as HTML5, CSS3, and JavaScript frameworks in our marketing platform.</li>
-                <li>Managed website content and performed quality assurance testing to ensure high standards.</li>
-                <li>Utilized content management systems (CMS) like Contentful and Salesforce to maintain and update website content efficiently.</li>
-                <li>Conducted market research and stayed abreast of web development trends to enhance the effectiveness of digital campaigns.</li>
+                <li>Designed and developed responsive websites for veterinary clinics, enhancing their online presence.</li>
+                <li>Collaborated on implementing features using HTML5, CSS3, and JavaScript frameworks, ensuring a modern and functional user experience.</li>
+                <li>Managed website content using CMS platforms like Contentful and Salesforce, facilitating easy updates and maintenance.</li>
+                <li>Conducted market research and stayed up-to-date with web development trends, applying insights to improve website performance and design.</li>
             </ul>
         </div>
         <div class="content-card">
             <h3>Marketing Intern at Americans For Financial Reform Education Fund</h3>
-            <p>Washington, DC | 2022-2023</p>
+            <p>Washington DC | 2022-2023</p>
             <ul>
-                <li>Crafted and updated web narratives aligned with brand guidelines to enhance engagement and visibility.</li>
-                <li>Collaborated with the marketing team to troubleshoot technical issues and optimize content for better performance.</li>
-                <li>Applied web analytics for data analysis, improving SEO strategies and enhancing online presence.</li>
+                <li>Crafted and updated web narratives aligned with brand guidelines, enhancing the organization's online voice.</li>
+                <li>Collaborated on troubleshooting technical issues and optimizing content, ensuring a smooth user experience.</li>
+                <li>Applied web analytics for data analysis and SEO optimization, driving better engagement and search engine visibility.</li>
             </ul>
         </div>
     </section>
@@ -227,8 +271,21 @@
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact</h2>
-        <p>If you would like to get in touch with me, feel free to reach out via email or connect with me on LinkedIn or GitHub.</p>
-        <a href="mailto:browninquires@gmail.com" class="btn">Email Me</a>
+        <p>If you'd like to get in touch, please feel free to reach out via email or connect with me on LinkedIn or GitHub.</p>
     </section>
+
+    <footer>
+        <p>&copy; 2024 Te'yana Brown. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/te-yana-brown-04a97224a/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/0tbrown" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+        <p>Contact: <a href="mailto:browninquires@gmail.com">browninquires@gmail.com</a></p>
+    </footer>
 </body>
 </html>
+
